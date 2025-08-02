@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <script src="https://kit.fontawesome.com/3e88d8193b.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>L'histoir d'amour de Léana et Matis</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1302369433367292"
+     crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+  <header>
+    <h1>L'histoir d'amour de Léana et Matis</h1>
+  </header>
+
+  <main id="quizContainer">
+    <!-- Page 1 -->
+    <section class="quiz page" id="page1">
+      <h2>Petit quiz d'amour ❤️</h2>
+      <div class="question">
+        <p>Quand est-ce qu'on s'est mis ensemble ?( met en jj/mm/aaaa )</p>
+        <input type="text" id="q1" onblur="verifier('q1', '20/06/2024')" />
+        <div class="feedback" id="f1"></div>
+      </div>
+      <div class="question">
+        <p>Dans quelle endroit on s'est fait notre premier bisous ? ( conseille mettre les apostrophe )</p>
+        <input type="text" id="q2" onblur="verifier('q2', 'eglise')" />
+        <div class="feedback" id="f2"></div>
+      </div>
+      <div class="navigation">
+        <button onclick="suivant(1)">→ Suivant</button>
+      </div>
+    </section>
+
+    <!-- Page 2 -->
+    <section class="quiz page" id="page2" style="display:none">
+      <h2>Encore un peu ❤️</h2>
+      <div class="question">
+        <p>Quelle est notre premier film au cinéma ? ( il y a un espace dans la réponse )</p>
+        <input type="text" id="q3" onblur="verifier('q3', 'blue lock')" />
+        <div class="feedback" id="f3"></div>
+      </div>
+      <div class="question">
+        <p>Il y a combien de temps qu'on a sumone (l'heure actuelle est donne juste le chiffre) ?</p>
+        <input type="text" id="q4" onblur="verifier('q4', '408')" />
+        <div class="feedback" id="f4"></div>
+      </div>
+      <div class="navigation">
+        <button onclick="precedent(2)">← Précédent</button>
+        <button onclick="suivant(2)">→ Suivant</button>
+      </div>
+    </section>
+
+    <!-- Page 3 -->
+    <section class="quiz page" id="page3" style="display:none">
+      <h2>Juste encore un peu ❤️</h2>
+      <div class="question">
+        <p>Quelle mot qu'on a inventer signifie "sérieusement" ? (sans majuscule)</p>
+        <input type="text" id="q5" onblur="verifier('q5', 'innuc')" />
+        <div class="feedback" id="f5"></div>
+      </div>
+      <div class="question">
+        <p>Quelle est l'heure que Léana dit le plus souvent ?</p>
+        <input type="text" id="q6" onblur="verifier('q6', '21h12')" />
+        <div class="feedback" id="f6"></div>
+      </div>
+      <div class="navigation">
+        <button onclick="precedent(3)">← Précédent</button>
+        <button onclick="suivant(3)">→ Suivant</button>
+      </div>
+    </section>
+
+    <!-- Page 4 (Finale) -->
+    <section class="final page" id="page4" style="display:none; position:relative;">
+      <h2>J'éspere que ca ta fait plaisir JOYEUX ANNIVERSAIRE !!!!!!!!! 💞</h2>
+      <p id="typingMessage"></p>
+      <div class="navigation">
+        <button onclick="precedent(4)">← Précédent</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Confettis container -->
+  <div id="confettis"></div>
+
+  <!-- Bouton musique -->
+  <button id="musicBtn">▶️ Jouer la musique</button>
+
+  <!-- Musique douce -->
+  <audio id="music" controls autoplay muted loop>
+    <source src="say_yes_to_heaven.mp3.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+
+  <div class="icons">   
+    <i class="fa-solid fa-heart-pulse fa-2x"></i>
+  </div>
+
+<div id="introScreen">
+  <div id="introText">Si tu active la musique baise le son💖</div>
+</div>
+
+<div id="challengeTimer">
+  <div id="timeBar"></div>
+  <span id="timeText">love u</span>
+</div>
+
+
+
+
+
+</body>
+</html>
